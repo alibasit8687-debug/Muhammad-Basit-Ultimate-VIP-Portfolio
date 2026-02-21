@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Muhammad Basit — Ultimate VIP Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<style>
+body{scroll-behavior:smooth;}
+.vip-hover{transition:.4s;}
+.vip-hover:hover{transform:translateY(-12px) scale(1.04);box-shadow:0 30px 60px rgba(0,255,255,.6);}
+.glass{background:rgba(255,255,255,0.06);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.1);}
+.glow{text-shadow:0 0 20px cyan;}
+.typing::after{content:"|";animation:blink 1s infinite;}
+@keyframes blink{50%{opacity:0}}
+.dark-mode{background:#000;color:#fff;}
+.light-mode{background:#f3f4f6;color:#000;}
+</style>
+</head>
+
+<body id="body" class="dark-mode">
+
+<!-- PARTICLES -->
+<div id="particles-js" class="fixed w-full h-full -z-10"></div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/923238778543"
+class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full vip-hover z-50">💬</a>
+
+<!-- NAVBAR -->
+<nav class="glass sticky top-0 flex justify-between p-5">
+<h1 class="text-2xl font-bold text-cyan-400 glow">Basit Dev</h1>
+
+<div class="space-x-6">
+<a href="#services" class="vip-hover">Services</a>
+<a href="#projects" class="vip-hover">Projects</a>
+<a href="#skills" class="vip-hover">Skills</a>
+<a href="#blog" class="vip-hover">Blog</a>
+<a href="#contact" class="vip-hover">Contact</a>
+<button onclick="toggleMode()">🌙</button>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col items-center justify-center text-center p-6">
+
+<img src="621721868_914866257662972_8080853843370382922_n.jpg"
+class="w-48 h-48 rounded-full border-4 border-cyan-400 vip-hover object-cover">
+
+<h1 class="text-5xl font-bold mt-6 glow">Muhammad Basit</h1>
+
+<h2 id="typing" class="text-cyan-300 text-xl mt-3 typing"></h2>
+
+<p class="mt-6 max-w-xl">
+Elite Web Developer & Digital Expert delivering premium solutions worldwide.
+</p>
+
+<!-- CV DOWNLOAD -->
+<a href="Basit-CV.pdf" download
+class="mt-6 bg-cyan-400 text-black px-8 py-3 rounded-full font-bold vip-hover">
+Download CV 📄
+</a>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 px-6">
+<h2 class="text-4xl text-center text-cyan-400 mb-14">VIP Services</h2>
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="glass p-8 rounded-2xl vip-hover">Web Development</div>
+<div class="glass p-8 rounded-2xl vip-hover">WordPress</div>
+<div class="glass p-8 rounded-2xl vip-hover">Digital Marketing</div>
+<div class="glass p-8 rounded-2xl vip-hover">Video Editing</div>
+<div class="glass p-8 rounded-2xl vip-hover">Graphic Designing</div>
+<div class="glass p-8 rounded-2xl vip-hover">SEO Optimization</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-6">
+<h2 class="text-4xl text-center text-cyan-400 mb-14">Projects</h2>
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="glass p-6 rounded-2xl vip-hover">E-commerce Website</div>
+<div class="glass p-6 rounded-2xl vip-hover">Portfolio Website</div>
+<div class="glass p-6 rounded-2xl vip-hover">Business Website</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 px-6">
+<h2 class="text-4xl text-center text-cyan-400 mb-14">Skills</h2>
+
+<div class="max-w-3xl mx-auto space-y-6">
+<div><p>HTML / CSS</p><div class="bg-gray-700 rounded h-3"><div class="bg-cyan-400 h-3 rounded w-[95%]"></div></div></div>
+<div><p>JavaScript</p><div class="bg-gray-700 rounded h-3"><div class="bg-cyan-400 h-3 rounded w-[85%]"></div></div></div>
+<div><p>WordPress</p><div class="bg-gray-700 rounded h-3"><div class="bg-cyan-400 h-3 rounded w-[90%]"></div></div></div>
+</div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="py-20 text-center">
+<h2 class="text-4xl text-cyan-400 mb-6">Testimonials</h2>
+<div class="glass p-8 rounded-2xl max-w-2xl mx-auto vip-hover">
+"Outstanding work! Highly recommended developer."
+</div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="py-20 px-6">
+<h2 class="text-4xl text-center text-cyan-400 mb-14">Latest Blog</h2>
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="glass p-6 rounded-2xl vip-hover">Web Development Tips</div>
+<div class="glass p-6 rounded-2xl vip-hover">SEO Guide 2026</div>
+<div class="glass p-6 rounded-2xl vip-hover">Freelancing Secrets</div>
+</div>
+</section>
+
+<!-- CONTACT (FORMSPREE) -->
+<section id="contact" class="py-20 text-center">
+
+<h2 class="text-4xl text-cyan-400 mb-6">Contact Me</h2>
+
+<form action="https://formspree.io/f/xykdjdal"
+method="POST"
+class="max-w-xl mx-auto space-y-4 glass p-8 rounded-2xl">
+
+<input type="hidden" name="_subject" value="New Portfolio Message">
+
+<input type="text" name="name" placeholder="Your Name" required
+class="w-full p-3 rounded bg-gray-800">
+
+<input type="email" name="email" placeholder="Your Email" required
+class="w-full p-3 rounded bg-gray-800">
+
+<textarea name="message" placeholder="Message" required
+class="w-full p-3 rounded bg-gray-800 h-32"></textarea>
+
+<button type="submit"
+class="bg-cyan-400 text-black px-8 py-3 rounded-full font-bold vip-hover w-full">
+Send Message 🚀
+</button>
+
+</form>
+</section>
+
+<footer class="text-center py-6 text-gray-400">
+© 2026 Muhammad Basit — Ultimate VIP Portfolio
+</footer>
+
+<script>
+const text="Web Developer • WordPress Expert • Digital Marketer";
+let i=0;
+function typing(){if(i<text.length){document.getElementById("typing").innerHTML+=text.charAt(i);i++;setTimeout(typing,60);}}
+typing();
+
+function toggleMode(){
+let body=document.getElementById("body");
+body.classList.toggle("light-mode");
+body.classList.toggle("dark-mode");
+}
+
+particlesJS("particles-js",{particles:{number:{value:80},color:{value:"#00ffff"},line_linked:{enable:true,color:"#00ffff"},move:{speed:2}}});
+</script>
+
+</body>
+</html>
